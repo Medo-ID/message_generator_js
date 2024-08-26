@@ -28,7 +28,7 @@ export const greetings = {
             "All your hard work has led to this moment, [recipient]. Congratulations!",
             "[recipient], proud of your achievements! Here’s to a bright and successful future!"
         ],
-        New_Job: [
+        'New Job': [
             "Congrats on the new job, [recipient]! You’re going to do great things.",
             "[recipient], wishing you success and happiness in your new position!",
             "A new job, a new adventure, [recipient]! Best of luck in your new role!",
@@ -42,7 +42,7 @@ export const greetings = {
             "[recipient], so happy for you! Wishing you a wonderful journey as you build your new life together.",
             "May your marriage be filled with love, joy, and laughter, [recipient]. Congrats!"
         ],
-        New_Baby: [
+        'New Baby': [
             "Congrats on your new bundle of joy, [recipient]! Wishing your family all the best.",
             "[recipient], so happy for you! Welcome to the world of parenthood!",
             "Sending lots of love to you and your new baby, [recipient]. Congrats!",
@@ -56,7 +56,7 @@ export const greetings = {
             "Retirement looks good on you, [recipient]! Enjoy your well-deserved break.",
             "Congrats on your retirement, [recipient]! Time to kick back and relax!"
         ],
-        Get_Well: [
+        'Get Well': [
             "Wishing you a speedy recovery, [recipient]! Get well soon.",
             "[recipient], sending you healing thoughts and a little sunshine to brighten your day!",
             "Hope you’re feeling better soon, [recipient]. Take care!",
@@ -70,7 +70,7 @@ export const greetings = {
             "Congrats on the promotion, [recipient]! Keep reaching for the stars.",
             "Wishing you all the best in your new position, [recipient]! Congrats!"
         ],
-        Thank_You: [
+        'Thank You': [
             "[recipient], just wanted to say thank you! Your kindness means the world to me.",
             "Thank you, [recipient], for being so wonderful! Your support is greatly appreciated.",
             "[recipient], thank you for everything you’ve done! You’re amazing.",

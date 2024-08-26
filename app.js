@@ -17,31 +17,37 @@ const rl = readline.createInterface({
 });
 
 // Generate a personalized greeting function
-const generateGreeting = (recipient, occasion) => {
+const generateGreeting = (name, recipient, occasion) => {
+    // Get random introduction
+    const introduction = greetings.introduction[Math.floor(Math.random() * greetings.introduction.length)];
     
-    // Find the occasion object in the greetings array
-    const occasionDta = greetings.find(item => item.occasion === occasion);
-    if (!occasionDta) {
+    // Get random message from the selected occasion
+    const occasionMessage = greetings.personalizedContent[occasion];
+    if (!occasionMessage) {
         return `Sorry, we don't have messages for the occasion: ${occasion}`;
     }
+    const personalMessage = occasionMessage[Math.floor(Math.random() * occasionMessage.length)];
 
-    // Get random message from the selected occasion
-    const randomIndex = Math.floor(Math.random() * occasionDta.messages.length);
-    const randomMessage = occasionDta.messages[randomIndex];
+    // Get random closing remark
+    const closing = greetings.closingRemark[Math.floor(Math.random() * greetings.closingRemark.length)]
 
     // Replace placeholders with actual names
-    return randomMessage.replace('[recipient]', recipient);
+    return `${introduction.replace('[recipient]', recipient).replace('[user]', name)} ${personalMessage.replace('[recipient]', recipient)}\n${closing.replace('[recipient]', recipient)}`;
 };
 
-// Ask for recipient name
-rl.question("What is the recipient's name: ", (recipient) => {
-    // Ask for the occasion
-    rl.question("What is the occasion (e.g., Birthday)? ", (occasion) => {
-        const greeting = generateGreeting(recipient, occasion);
-        console.log(`\n${greeting}`);
+// Ask for user input and generate a personalized greeting
+rl.question("What's your name? ", (name) => {
+    rl.question("What is the recipient's name: ", (recipient) => {
+        rl.question(
+            "What is the occasion? choose one. T:\n[Birthday, Anniversary, Graduation, New Job, Wedding, New Baby, Retirement, Get Well, Promotion, Thank You]: ", 
+            (occasion) => {
+                const greeting = generateGreeting(name, recipient, occasion);
+                console.log(`\n${greeting}`);
 
-        // close the readline interface
-        rl.close();
+                // close the readline interface
+                rl.close();
+            }
+        );
     });
 });
 
