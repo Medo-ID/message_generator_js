@@ -1,83 +1,90 @@
-export const greetings = [
-    {
-        occasion: "Birthday",
-        messages: [
-            "Happy Birthday, [recipient]! Wishing you a day filled with love, joy, and all your favorite things.",
-            "Cheers to you on your special day, [recipient]! May it be filled with laughter and unforgettable memories.",
-            "[recipient], here's to another year of great adventures and making wonderful memories! Happy Birthday!",
-            "Wishing you the happiest of birthdays, [recipient]! May all your dreams come true this year.",
-            "Happy Birthday to you, [recipient]! Enjoy your day to the fullest and make it as fabulous as you are!"
+export const greetings = {
+    introduction: [
+        "Hi [recipient], this is [user]!",
+        "Hello [recipient], [user] here!",
+        "Hey [recipient], it’s [user] reaching out!",
+        "Greetings [recipient], [user] checking in!",
+        "Good day [recipient], [user] says hi!"
+    ],
+    personalizedContent: {
+        Birthday: [
+            "[recipient], wishing you a fantastic birthday filled with joy and laughter!",
+            "Happy Birthday, [recipient]! May this year bring you endless happiness.",
+            "Cheers to you, [recipient], on your special day! May it be as amazing as you are.",
+            "[recipient], may your birthday be filled with sweet surprises and wonderful memories.",
+            "Sending you all my love on your birthday, [recipient]! Enjoy your day to the fullest."
+        ],
+        Anniversary: [
+            "[recipient], happy anniversary! Celebrating the wonderful love you two share.",
+            "To a beautiful couple, [recipient], may your love continue to grow stronger each year!",
+            "Congratulations on another year of love and happiness, [recipient]!",
+            "[recipient], wishing you a lifetime of love and happiness on your anniversary!",
+            "Here’s to many more years of love and togetherness, [recipient]! Happy anniversary!"
+        ],
+        Graduation: [
+            "Congrats [recipient]! Your hard work has paid off. Here’s to new beginnings!",
+            "[recipient], you did it! Wishing you success in all your future endeavors.",
+            "Well done, [recipient]! Your graduation is just the beginning of a bright future.",
+            "All your hard work has led to this moment, [recipient]. Congratulations!",
+            "[recipient], proud of your achievements! Here’s to a bright and successful future!"
+        ],
+        New_Job: [
+            "Congrats on the new job, [recipient]! You’re going to do great things.",
+            "[recipient], wishing you success and happiness in your new position!",
+            "A new job, a new adventure, [recipient]! Best of luck in your new role!",
+            "So excited for you, [recipient]! May your new job bring you joy and fulfillment.",
+            "[recipient], congratulations! Here’s to new challenges and opportunities!"
+        ],
+        Wedding: [
+            "Congratulations on your wedding day, [recipient]! Wishing you a lifetime of love.",
+            "[recipient], may your wedding day be filled with joy and your marriage blessed with happiness.",
+            "Wishing you all the best on your wedding day, [recipient]!",
+            "[recipient], so happy for you! Wishing you a wonderful journey as you build your new life together.",
+            "May your marriage be filled with love, joy, and laughter, [recipient]. Congrats!"
+        ],
+        New_Baby: [
+            "Congrats on your new bundle of joy, [recipient]! Wishing your family all the best.",
+            "[recipient], so happy for you! Welcome to the world of parenthood!",
+            "Sending lots of love to you and your new baby, [recipient]. Congrats!",
+            "[recipient], what a beautiful blessing! Wishing you all the happiness in the world.",
+            "Welcome to the world, little one! Congrats, [recipient]!"
+        ],
+        Retirement: [
+            "Happy retirement, [recipient]! Wishing you endless days of relaxation and joy.",
+            "[recipient], you’ve earned it! Enjoy every moment of your retirement.",
+            "Wishing you all the best in this next chapter of your life, [recipient]. Congrats!",
+            "Retirement looks good on you, [recipient]! Enjoy your well-deserved break.",
+            "Congrats on your retirement, [recipient]! Time to kick back and relax!"
+        ],
+        Get_Well: [
+            "Wishing you a speedy recovery, [recipient]! Get well soon.",
+            "[recipient], sending you healing thoughts and a little sunshine to brighten your day!",
+            "Hope you’re feeling better soon, [recipient]. Take care!",
+            "[recipient], thinking of you and wishing you a quick recovery.",
+            "Get well soon, [recipient]! We miss you and hope to see you back soon."
+        ],
+        Promotion: [
+            "Congrats on your promotion, [recipient]! Your hard work has paid off.",
+            "[recipient], so proud of you! Wishing you continued success in your new role.",
+            "Promotion well-deserved, [recipient]! Here’s to even more achievements!",
+            "Congrats on the promotion, [recipient]! Keep reaching for the stars.",
+            "Wishing you all the best in your new position, [recipient]! Congrats!"
+        ],
+        Thank_You: [
+            "[recipient], just wanted to say thank you! Your kindness means the world to me.",
+            "Thank you, [recipient], for being so wonderful! Your support is greatly appreciated.",
+            "[recipient], thank you for everything you’ve done! You’re amazing.",
+            "I’m so grateful for you, [recipient]. Thank you for your help and support!",
+            "[recipient], your generosity and kindness have made all the difference. Thank you!"
         ]
     },
-    {
-        occasion: "Anniversary",
-        messages: [
-            "Happy Anniversary, [recipient]! May your love continue to grow stronger with each passing year.",
-            "Congratulations on another year of love, laughter, and happiness. Happy Anniversary, [recipient]!",
-            "[recipient], wishing you a very happy anniversary filled with endless love and joy!",
-            "Cheers to the wonderful couple! Happy Anniversary, [recipient]! Here's to many more years of happiness together.",
-            "Happy Anniversary, [recipient]! May your journey together be filled with countless blessings and cherished moments."
-        ]
-    },
-    {
-        occasion: "Christmas",
-        messages: [
-            "Merry Christmas, [recipient]! May your holiday season be filled with warmth and happiness.",
-            "Wishing you a joyous Christmas, [recipient]! May your days be merry and bright.",
-            "Happy Holidays, [recipient]! May this Christmas bring you love, joy, and all the things that make you happy.",
-            "Merry Christmas, [recipient]! Hope your holidays are filled with good cheer and wonderful moments with loved ones.",
-            "Season's Greetings, [recipient]! Wishing you a Christmas filled with peace, love, and joy."
-        ]
-    },
-    {
-        occasion: "New Year",
-        messages: [
-            "Happy New Year, [recipient]! Wishing you a year filled with new opportunities, joy, and success.",
-            "Cheers to a fabulous New Year, [recipient]! May it bring you happiness and prosperity.",
-            "Wishing you a Happy New Year, [recipient]! May it be full of great adventures and wonderful surprises.",
-            "Happy New Year, [recipient]! May this year be your best one yet, filled with dreams fulfilled and goals achieved.",
-            "Here's to a bright and exciting New Year, [recipient]! May it be full of happiness and endless possibilities."
-        ]
-    },
-    {
-        occasion: "Thanksgiving",
-        messages: [
-            "Happy Thanksgiving, [recipient]! Wishing you a day full of gratitude, love, and delicious food.",
-            "This Thanksgiving, [recipient], may your home be filled with love and your heart with thanks.",
-            "[recipient], wishing you a wonderful Thanksgiving filled with good company and great memories!",
-            "Happy Thanksgiving, [recipient]! May your day be filled with blessings and your heart with joy.",
-            "Thankful for you, [recipient]! Wishing you a beautiful Thanksgiving filled with love and gratitude."
-        ]
-    },
-    {
-        occasion: "Get Well",
-        messages: [
-            "Get well soon, [recipient]! Wishing you a speedy recovery and good health.",
-            "Thinking of you, [recipient], and hoping you're feeling better every day. Get well soon!",
-            "Sending you healing thoughts and a big hug, [recipient]. Get well soon!",
-            "[recipient], we're all thinking of you and wishing you a swift recovery. Get well soon!",
-            "Take care of yourself, [recipient]. Hope you're back to your usual self very soon!"
-        ]
-    },
-    {
-        occasion: "Congratulations",
-        messages: [
-            "Congratulations, [recipient]! Your hard work has truly paid off. Well done!",
-            "So proud of your accomplishment, [recipient]! Congratulations and keep up the great work!",
-            "Way to go, [recipient]! Congratulations on your amazing achievement!",
-            "Well done, [recipient]! Your dedication and effort have brought you this success. Congratulations!",
-            "Cheers to your success, [recipient]! You've earned every bit of it. Congratulations!"
-        ]
-    },
-    {
-        occasion: "Valentine's Day",
-        messages: [
-            "Happy Valentine's Day, [recipient]! You make every day feel like a dream come true.",
-            "[recipient], you fill my life with love and happiness. Happy Valentine's Day!",
-            "On this special day, I want you to know how much I love you, [recipient]. Happy Valentine's Day!",
-            "Happy Valentine's Day, [recipient]! You are my one and only, today and always.",
-            "[recipient], you are the love of my life. Wishing you a Valentine's Day as wonderful as you are!"
-        ]
-    }
-];
+    closingRemark: [
+        "Take care, [recipient]!",
+        "Best wishes, [recipient]!",
+        "Cheers, [recipient]!",
+        "Sending my best, [recipient]!",
+        "All the best, [recipient]!"
+    ]
+};
+  
   
